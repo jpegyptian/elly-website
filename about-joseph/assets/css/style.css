@@ -735,16 +735,21 @@ ul {
 }
 
 .cert-logo {
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
     margin: 0 auto 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--primary-light);
-    color: var(--primary-color);
-    border-radius: var(--radius-full);
-    font-size: 1.5rem;
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.cert-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .cert-name {
